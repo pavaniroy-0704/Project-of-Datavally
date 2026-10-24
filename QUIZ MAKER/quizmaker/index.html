@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deckwise — Build and Take Quizzes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-glow"></div>
+<div id="app">
+
+  <header class="topbar">
+    <div class="brand" data-nav="home">
+      <span class="brand-mark">◆</span>
+      <span class="brand-name">Deckwise</span>
+    </div>
+    <nav class="topnav">
+      <button class="nav-link" data-nav="home">Home</button>
+      <button class="nav-link" data-nav="browse">Browse</button>
+      <button class="nav-link" data-nav="create">Create</button>
+    </nav>
+    <div class="auth-slot" id="authSlot"></div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="nav-link" data-nav="home">Home</button>
+    <button class="nav-link" data-nav="browse">Browse</button>
+    <button class="nav-link" data-nav="create">Create</button>
+    <div class="mobile-auth" id="mobileAuthSlot"></div>
+  </div>
+
+  <main id="view"></main>
+
+  <footer class="site-footer">
+    <span>Deckwise — build a deck, deal it out, see who scores.</span>
+  </footer>
+
+</div>
+
+<template id="tpl-toast">
+  <div class="toast"></div>
+</template>
+
+<script src="script.js"></script>
+</body>
+</html>
